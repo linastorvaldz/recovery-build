@@ -1,0 +1,27 @@
+env:
+  FOX_SYNC: https://github.com/linastorvaldz/fox-sync.git
+  FOX_BRANCH: 14.1
+  DT_REPO: https://github.com/linastorvaldz/recovery_xiaomi_gold
+  DT_BRANCH: fox-14.1_a15
+  DT_PATH: device/xiaomi/gold
+  DEVICE_MAKEFILE: twrp_gold-ap2a
+  DEVICE_NAME: gold
+  BUILD_TARGET: vendorboot
+  TIMEZONE: Asia/Makassar
+  RELEASE_REPO: linastorvaldz/recovery-releases
+  GH_TOKEN: ENCRYPTED[565dfe65d4b933fb8680e8bc91c028ed3808fb31f812b67a4caebc7c65c18f978b9c7cc1b0fe73745af09650d865d254]
+  TG_BOT_TOKEN: ENCRYPTED[8d327e733738a01f3c6f69738e6fb42b43720926afe24add8558cbe99a2d4c2de378fe11ba2c1db57f3f9690f3be6004]
+  TG_CHAT_ID: ENCRYPTED[029bce70feceac4b5a593d764b2fbd6e1232686dd80bfbb6eef92ea5e9ca4130e9a5c42a8b4fcf69ae72fa833eb1ca7d]
+
+task:
+  name: "Build Fox"
+  timeout_in: 480m
+  container:
+    image: eraselk/ubuntu:22.04
+    cpu: 8
+    memory: 32G
+
+  script:
+    - chmod a+x *.sh
+    - ./build.sh
+    - exit $?
