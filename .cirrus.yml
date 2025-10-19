@@ -1,11 +1,11 @@
 env:
   FOX_SYNC: https://github.com/linastorvaldz/fox-sync.git
   FOX_BRANCH: 14.1
-  DT_REPO: https://github.com/linastorvaldz/recovery_xiaomi_gold
-  DT_BRANCH: fox-14.1_a15
-  DT_PATH: device/xiaomi/gold
-  DEVICE_MAKEFILE: twrp_gold-ap2a
-  DEVICE_NAME: gold
+  DT_REPO: https://github.com/linastorvaldz/recovery_xiaomi_dew
+  DT_BRANCH: fox-14.1
+  DT_PATH: device/xiaomi/dew
+  DEVICE_MAKEFILE: twrp_dew-ap2a
+  DEVICE_NAME: dew
   BUILD_TARGET: vendorboot
   TIMEZONE: Asia/Makassar
   RELEASE_REPO: linastorvaldz/recovery-releases
