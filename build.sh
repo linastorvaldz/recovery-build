@@ -31,7 +31,7 @@ git clone --depth=1 -q "$DT_REPO" -b "$DT_BRANCH" "$DT_PATH"
 
 # Build Fox
 log "Building Fox..."
-source build/envsetup.sh
+source build/envsetup.sh || true
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch "${DEVICE_MAKEFILE}-eng"
 mka adbd "${BUILD_TARGET}image" -j"$(nproc --all)"
