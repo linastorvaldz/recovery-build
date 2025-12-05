@@ -1,11 +1,11 @@
 env:
-  FOX_SYNC: https://github.com/linastorvaldz/fox-sync.git
-  FOX_BRANCH: 14.1
-  DT_REPO: https://github.com/linastorvaldz/recovery_xiaomi_gold
-  DT_BRANCH: HOS2-14.1
-  DT_PATH: device/xiaomi/gold
-  DEVICE_MAKEFILE: twrp_gold-ap2a
-  DEVICE_NAME: gold
+  FOX_SYNC: https://gitlab.com/orangefox/sync.git
+  FOX_BRANCH: 12.1
+  DT_REPO: https://github.com/linastorvaldz/recovery_xiaomi_beryl.git
+  DT_BRANCH: 12.1
+  DT_PATH: device/xiaomi/beryl
+  DEVICE_MAKEFILE: twrp_beryl
+  DEVICE_NAME: beryl
   BUILD_TARGET: vendorboot
   TIMEZONE: Asia/Makassar
   RELEASE_REPO: linastorvaldz/recovery-releases
